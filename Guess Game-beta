@@ -1,0 +1,20 @@
+//Guessing Game by Liam
+//Generate random number 1-100
+var answer = Math.floor(Math.random()*100)+1;
+//Gives answer for the console for testing
+console.log(answer);
+//create guess variable
+var guess;
+//This starts the loop that starts the game until the answer is said
+while (guess != answer){
+  //Starts the game and gives you a prompt
+  guess = prompt("What Am I thinking?");
+  //This is the manual Input
+  if (guess < answer){
+  //this is the manual input
+    alert("Hint: Try a higher number!");
+  }
+  else{
+    alert("Hint: Try a lower number!");
+  }
+}
